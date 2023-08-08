@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "termites",
+	"version": "${version}",
+	"name": "Termites",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"RedRain0o0"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/termites/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.redrain0o0.termites.Termites"
+		],
+		"client": [
+			"io.github.redrain0o0.termites.TermitesClient"
+		],
+		"fabric-datagen": [
+			"io.github.redrain0o0.termites.TermitesDataGenerator"
+		]
+	},
+	"mixins": [
+		"termites.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
